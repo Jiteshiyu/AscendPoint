@@ -25,9 +25,14 @@
   z-index: 1000;
 }
 
-.logo a {
-  text-decoration: none;
+.logo a,
+.nav-link,
+.signup a {
   color: #fff;
+  text-decoration: none;
+}
+
+.logo a {
   font-size: 1.7rem;
   font-weight: bold;
 }
@@ -45,27 +50,24 @@
 }
 
 .nav-link {
-  color: #fff;
   font-size: 1.3rem;
   padding: 0.5rem 0.7rem;
-  text-decoration: none;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.signup a:hover,
+.submit-btn:hover {
   color: #f00;
 }
 
 .signup a {
-  color: #fff;
   background-color: #007bff;
   padding: 0.5rem 1.3rem;
-  text-decoration: none;
   font-size: 1rem;
   border-radius: 1rem;
 }
 
 .signup a:hover {
-  color: #fff;
   background-color: #0056b3;
 }
 
@@ -99,8 +101,7 @@
 .home-container {
   max-width: 85%;
   display: flex;
-  padding: 1.5rem;
-  padding-bottom: 0.5rem;
+  padding: 1.5rem 0.5rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -165,9 +166,7 @@
 }
 
 #signup {
-  margin-top: 1rem;
-  padding-bottom: 1.3rem;
-  padding-top: 4rem;
+  padding: 4rem 0 1.3rem;
   margin-top: -3rem;
 }
 
@@ -197,10 +196,9 @@
   font-style: italic;
 }
 
-#username,
-#email,
-#password,
-#confirm-password {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   margin-bottom: 0.5rem;
   padding: 0.3rem;
   font-size: 1rem;
@@ -221,10 +219,6 @@
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
-}
-
-.submit-btn:hover {
-  color: #f00;
 }
 
 .error-msg {
@@ -267,7 +261,6 @@
 .service-card-container {
   display: flex;
   flex-direction: column;
-  border-radius: 2px solid #000;
   border-radius: 5px;
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.17);
 }
@@ -288,7 +281,8 @@
   border-top-right-radius: 0.3rem;
 }
 
-.service-card-content {
+.service-card-content,
+.service-card-footer {
   background-color: #f7f7f7;
   padding: 1rem;
 }
@@ -301,12 +295,6 @@
 .card-desc {
   font-size: 1rem;
   color: #555;
-}
-
-.service-card-footer {
-  padding: 1rem;
-  text-align: center;
-  background-color: #f7f7f7;
 }
 
 .card-button {
@@ -322,19 +310,18 @@
 .about-container {
   max-width: 75%;
   display: flex;
-  margin-top: 1rem;
-  margin-bottom: 1.7rem;
+  margin: 1rem 0 1.7rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .about-img-box {
-  position: relative;
-  overflow: hidden;
   height: 15rem;
   width: 25rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
 }
 
 .about-img {
@@ -421,84 +408,64 @@
 }
 
 .contact-title {
-  display: block;
-  color: #333;
-  margin: 0.3rem 0;
-  text-decoration: none;
+  font-size: 1.3rem;
   font-weight: bold;
+  padding-top: 0.7rem;
 }
 
-.contact-title:hover {
+.contact-role {
+  font-size: 1rem;
+  color: #777;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.contact-icon {
+  color: #333;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+.contact-icon:hover {
   color: #007bff;
 }
 
-@media (max-width: 872px) {
-  .home-container {
-    padding: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
-    flex-direction: column;
-  }
-
-  #services {
-    padding-top: 3.2rem;
-    padding-bottom: 0;
-    margin-bottom: 0rem;
-  }
-
-  #signup {
-    padding-top: 3.5rem;
-    margin-top: -2.55rem;
-    margin-bottom: 1.3rem;
-  }
-
-  #contact {
-    padding-top: 3rem;
-    margin-top: -2.5rem;
-  }
-
-  #about {
-    padding-top: 0.5rem;
-    margin-top: -3.8rem;
-  }
-
-  .about-container {
-    flex-direction: column;
-    margin-bottom: 1.7rem;
-  }
-
-  .about-img-box {
-    width: 20rem;
-  }
-
+/* Media Queries */
+@media (max-width: 768px) {
   .navbar {
-    width: 100%;
     display: none;
-    background-color: #333;
-    padding-top: 3rem;
-    padding-bottom: 0.6rem;
-    position: absolute;
-    top: 3rem;
-    left: 0;
-  }
-
-  .navbar.active {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-  }
-
-  .signup {
-    margin-bottom: 0.5rem;
   }
 
   .hamburger {
     display: flex;
+  }
+
+  .home-container,
+  .about-container {
+    flex-direction: column;
+  }
+
+  .home-content,
+  .about-content {
+    padding: 0;
+  }
+
+  .home-title,
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .video-box {
+    height: 18rem;
+    width: 16rem;
   }
 }
