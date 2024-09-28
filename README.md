@@ -1,4 +1,4 @@
-# Professional Landing Page
+# AscendPoint
 
 A simple, clean, and responsive landing page built with HTML, CSS, and JavaScript. This page is designed to showcase a professional website with sections like Home, About, Services, and Contact. It includes a video, service cards, and a signup form, all designed for a professional user experience.
 
@@ -41,7 +41,7 @@ A simple, clean, and responsive landing page built with HTML, CSS, and JavaScrip
 ## Installation
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://github.com/Jiteshiyu/Professional-landing-page.git
+   git clone https://github.com/Jiteshiyu/AscendPoint.git
    ```
 2. Navigate into the project directory.
    
