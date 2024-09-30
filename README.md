@@ -8,7 +8,7 @@ A simple, clean, and responsive landing page built with HTML, CSS, and JavaScrip
 
 ## Demo
 
-You can view a live demo of the project [here](https://netlify.ascendpoint.app/).
+You can view a live demo of the project [here](https://ascendpoint.netlify.app/).
 
 ## Features
 - **Responsive Design:** Works on all screen sizes (desktop, tablet, mobile).
