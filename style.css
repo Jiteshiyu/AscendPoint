@@ -258,14 +258,14 @@
   font-size: 1.2rem;
 }
 
-.services-container {
+.services-cards-container {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
   justify-content: center;
 }
 
-.service-card-container {
+.service-card {
   display: flex;
   flex-direction: column;
   border-radius: 2px solid #000;
@@ -387,7 +387,7 @@
   margin-bottom: 0.5rem;
 }
 
-.contact-container {
+.contact-cards-container {
   display: grid;
   gap: 1rem;
   padding: 0.7rem;
