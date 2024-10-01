@@ -456,10 +456,19 @@ header {
 }
 
 /* Media Queries */
-@media (max-width: 1178px) {
+@media (max-width: 1180px) {
   header {
-  justify-content: space-between;
-  padding: 1.2rem 2.5rem;
+    justify-content: space-between;
+    padding: 1.2rem 2.5rem;
+  }
+
+  .signup a {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
   }
 }
 
