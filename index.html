@@ -9,31 +9,43 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <div class="logo">
-          <a href="/">AscendPoint</a>
-        </div>
-        <nav class="navbar">
-          <ul class="nav-list">
-            <li><a class="nav-link" href="/">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-          <div class="signup">
-            <a href="#signup" class="nav-link signup-btn">Sign up</a>
+      <!-- Header Conatiner -->
+      <div class="header-container">
+        <header>
+          <!-- Brandname -->
+          <div class="logo">
+            <a href="/">AscendPoint</a>
           </div>
-        </nav>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </header>
+          <!-- Navbar -->
+          <nav class="navbar">
+            <!-- Navlist -->
+            <ul class="nav-list">
+              <!-- Navlink -->
+              <li><a class="nav-link" href="/">Home</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#services">Services</a></li>
+              <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <!-- Sign up btn -->
+            <div class="signup">
+              <a href="#signup" class="nav-link signup-btn">Sign up</a>
+            </div>
+          </nav>
+          <!-- Hamburger -->
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </header>
+      </div>
 
+      <!-- Main container -->
       <div class="main-container">
+        <!-- Home Section -->
         <section id="home">
           <div class="home-container">
+            <!-- Home content -->
             <div class="home-content">
               <h2 class="home-title">AscendPoint</h2>
               <h3 class="home-subtitle creativity">Creativity</h3>
@@ -57,13 +69,15 @@
                 Committed to providing top-tier service and results.
               </p>
             </div>
+            <!-- Webpage video -->
             <div class="video-box">
               <video src="./public/video.mp4" class="video" controls></video>
             </div>
           </div>
         </section>
-
+        <!-- Services Section -->
         <section id="services">
+          <!-- Services heading -->
           <div class="services-header">
             <h1 class="services-title">Services</h1>
             <p class="services-desc">
@@ -71,8 +85,11 @@
               drive growth and efficiency.
             </p>
           </div>
-          <div class="services-container">
-            <div class="service-card-container">
+          <!-- Service cards container -->
+          <div class="services-cards-container">
+            <!-- Service card -->
+            <div class="service-card">
+              <!-- Service card header -->
               <div class="service-card-header">
                 <img
                   src="./public/reliabilty.jpg"
@@ -80,6 +97,7 @@
                   class="service-card-image"
                 />
               </div>
+              <!-- Service card content -->
               <div class="service-card-content">
                 <h2 class="card-title">Reliability</h2>
                 <p class="card-desc">
@@ -87,11 +105,12 @@
                   you can trust and work.
                 </p>
               </div>
+              <!-- Service card footer -->
               <div class="service-card-footer">
                 <button class="card-button">Learn More</button>
               </div>
             </div>
-            <div class="service-card-container">
+            <div class="service-card">
               <div class="service-card-header">
                 <img
                   src="./public/expertise.jpg"
@@ -110,7 +129,7 @@
                 <button class="card-button">Learn More</button>
               </div>
             </div>
-            <div class="service-card-container">
+            <div class="service-card">
               <div class="service-card-header">
                 <img
                   src="./public/quality.jpg"
@@ -129,7 +148,7 @@
                 <button class="card-button">Learn More</button>
               </div>
             </div>
-            <div class="service-card-container">
+            <div class="service-card">
               <div class="service-card-header">
                 <img
                   src="./public/innovation.jpg"
@@ -148,7 +167,7 @@
                 <button class="card-button">Learn More</button>
               </div>
             </div>
-            <div class="service-card-container">
+            <div class="service-card">
               <div class="service-card-header">
                 <img
                   src="./public/scalability.jpg"
@@ -167,7 +186,7 @@
                 <button class="card-button">Learn More</button>
               </div>
             </div>
-            <div class="service-card-container">
+            <div class="service-card">
               <div class="service-card-header">
                 <img
                   src="./public/integrity.jpg"
@@ -188,21 +207,27 @@
             </div>
           </div>
         </section>
-
+        <!-- Signup Section -->
         <section id="signup">
           <div class="signup-form">
+            <!-- Signup heading -->
             <h2 class="signup-heading">Sign up</h2>
+            <!-- Signup form -->
             <form class="form">
+              <!-- Username input -->
               <div class="form-grp">
                 <label for="username" class="label">Username: </label>
                 <input type="text" placeholder="Enter username" id="username" />
+                <!-- Err msg -->
                 <small class="error-msg"></small>
               </div>
+              <!-- Email input -->
               <div class="form-grp">
                 <label for="email" class="label">Email: </label>
                 <input type="text" placeholder="Enter email" id="email" />
                 <small class="error-msg"></small>
               </div>
+              <!-- Password input -->
               <div class="form-grp">
                 <label for="password" class="label">Password: </label>
                 <input
@@ -212,6 +237,7 @@
                 />
                 <small class="error-msg"></small>
               </div>
+              <!-- Confirm password input -->
               <div class="form-grp">
                 <label for="confirm-password" class="label"
                   >Confirm Password:
@@ -223,15 +249,17 @@
                 />
                 <small class="error-msg"></small>
               </div>
+              <!-- Submit btn -->
               <div class="btn-area">
                 <button class="submit-btn">Submit</button>
               </div>
             </form>
           </div>
         </section>
-
+        <!-- About Section -->
         <section id="about">
           <div class="about-container">
+            <!-- About content -->
             <div class="about-content">
               <h2 class="about-title">About Us</h2>
               <p class="about-desc">
@@ -240,17 +268,22 @@
                 solve complex challenges.
               </p>
             </div>
+            <!-- About img -->
             <div class="about-img-box">
               <img src="./public/about.jpg" alt="about-img" class="about-img" />
             </div>
           </div>
         </section>
       </div>
-
+      <!-- Footer Section -->
       <footer class="footer">
+        <!-- Contact Section -->
         <section id="contact">
+          <!-- Contact heading -->
           <h2 class="contact-heading">Contact us on</h2>
-          <div class="contact-container">
+          <!-- Contact card container -->
+          <div class="contact-cards-container">
+            <!-- Contact card -->
             <div class="contact-card">
               <img src="./public/x.png" alt="x" class="contact-img" />
               <a href="#" class="contact-title">X</a>
@@ -269,12 +302,14 @@
             </div>
           </div>
         </section>
+        <!-- Footer info -->
         <div class="footer-info">
           <h3 class="footer-title">AscendPoint</h3>
           <p class="footer-desc">&copy;Copyright All rights reseverd.</p>
         </div>
       </footer>
     </div>
+    <!-- JS File -->
     <script src="app.js"></script>
   </body>
 </html>
