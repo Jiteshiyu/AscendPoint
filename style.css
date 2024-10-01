@@ -459,11 +459,11 @@ header {
 @media (max-width: 1180px) {
   header {
     justify-content: space-between;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
   }
 
   .logo a{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .signup a {
@@ -473,6 +473,15 @@ header {
 
   .nav-link {
     font-size: 1.3rem;
+    margin-right: 0.35rem;
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  header {
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
   }
 }
 
