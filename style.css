@@ -462,26 +462,23 @@ header {
     padding: 1rem 2rem;
   }
 
+  .navbar{
+    width: 100%;
+  }
+
   .logo a{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 
   .signup a {
     padding: 0.5rem 1.2rem;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .nav-link {
     font-size: 1.3rem;
-    margin-right: 0.35rem;
-    padding: 0.5rem 0.7rem;
-  }
-}
-
-@media (max-width: 1030px) {
-  header {
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
+    margin-right: 0.4rem;
+    padding: 0.55rem 0.75rem;
   }
 }
 
