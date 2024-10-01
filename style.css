@@ -31,7 +31,7 @@ header {
 /* Brandname Styles */
 .logo a {
   text-decoration: none;
-  color: #f41212;
+  color: #fff;
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -136,25 +136,15 @@ header {
   margin-bottom: 0.3rem;
 }
 
-.creativity {
-  color: #ec2011;
-}
+.creativity { color: #ec2011; }
 
-.focus {
-  color: #ff7700;
-}
+.focus { color: #ff7700; }
 
-.expertise {
-  color: #7517f0;
-}
+.expertise { color: #7517f0; }
 
-.technology {
-  color: #09afa7;
-}
+.technology { color: #09afa7; }
 
-.quality {
-  color: #f40cae;
-}
+.quality { color: #f40cae; }
 
 .home-desc {
   max-width: 25rem;
@@ -466,6 +456,13 @@ header {
 }
 
 /* Media Queries */
+@media (max-width: 1178px) {
+  header {
+  justify-content: space-between;
+  padding: 1.2rem 2.5rem;
+  }
+}
+
 @media (max-width: 872px) {
   .home-container {
     padding: 0.5rem;
