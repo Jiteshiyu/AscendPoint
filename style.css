@@ -557,7 +557,8 @@ header {
   }
 
   .nav-link:hover {
-  color: #f41212;
+    color: #f41212;
+    background-color: #333;
   }
 
   .signup {
