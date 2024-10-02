@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.18rem;
+  padding: 0.85rem;
   z-index: 1000;
 }
 
