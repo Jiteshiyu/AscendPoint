@@ -492,13 +492,13 @@ header {
     flex-direction: column;
   }
 
-  .home-subtitle {
+  .home-subtitle, .home-desc {
     text-align: center;
   }
 
   #services {
     padding-top: 5rem;
-    margin-top: -4.65rem;
+    margin-top: -4.85rem;
     padding-bottom: 0;
     margin-bottom: 0rem;
   }
@@ -516,7 +516,7 @@ header {
 
   #about {
     padding-top: 2.5rem;
-    margin-top: -5.45rem;
+    margin-top: -5.65rem;
   }
 
   .about-container {
