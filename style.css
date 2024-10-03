@@ -131,30 +131,19 @@ header {
 }
 
 .home-subtitle {
-  color: #6a6e6b;
   font-size: 1.2rem;
   margin-bottom: 0.3rem;
 }
 
-.creativity {
-  color: #ec2011;
-}
+.creativity { color: #ec2011; }
 
-.focus {
-  color: #ff7700;
-}
+.focus { color: #ff7700; }
 
-.expertise {
-  color: #7517f0;
-}
+.expertise { color: #7517f0; }
 
-.technology {
-  color: #09afa7;
-}
+.technology { color: #09afa7; }
 
-.quality {
-  color: #f40cae;
-}
+.quality { color: #f40cae; }
 
 .home-desc {
   max-width: 25rem;
@@ -169,6 +158,7 @@ header {
   margin: 1.5rem;
   position: relative;
   border: 2px solid #333;
+  border-radius: 0.5rem;
 }
 
 .video {
@@ -177,6 +167,7 @@ header {
   object-fit: cover;
   object-position: center;
   position: absolute;
+  border-radius: 0.5rem;
 }
 
 /* Signup Styles */
@@ -435,7 +426,7 @@ header {
 /* Contact Card Styles */
 .contact-card {
   background-color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -501,9 +492,13 @@ header {
     flex-direction: column;
   }
 
+  .home-subtitle {
+    text-align: center;
+  }
+
   #services {
     padding-top: 5rem;
-    margin-top: -4.15rem;
+    margin-top: -4.25rem;
     padding-bottom: 0;
     margin-bottom: 0rem;
   }
@@ -527,6 +522,16 @@ header {
   .about-container {
     flex-direction: column;
     margin-bottom: 1.7rem;
+  }
+
+  .signup-form {
+    margin-top: 1rem;
+    padding: 0.35rem;
+  }
+
+  .label {
+    font-size: 1rem;
+    font-style: italic;
   }
 
   .about-img-box {
