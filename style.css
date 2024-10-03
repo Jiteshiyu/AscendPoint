@@ -282,7 +282,7 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 2px solid #000;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.17);
 }
 
@@ -498,7 +498,7 @@ header {
 
   #services {
     padding-top: 5rem;
-    margin-top: -4.25rem;
+    margin-top: -4.4rem;
     padding-bottom: 0;
     margin-bottom: 0rem;
   }
@@ -525,7 +525,7 @@ header {
   }
 
   .signup-form {
-    min-width: 380px;
+    min-width: 360px;
     margin-top: 1rem;
     padding: 0.35rem;
   }
